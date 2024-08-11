@@ -1,5 +1,4 @@
 import { AjaxStore, GridRowModel, StringHelper } from '@bryntum/grid';
-import { Log } from '@/helpers/Logger';
 
 class Gate extends GridRowModel {
     static fields = [
@@ -43,7 +42,7 @@ const useGridConfig = () => {
         stripeFeature     : true,
         treeFeature       : true,
         autoHeight        : false,
-        height            : 600,
+        height            : 300,
         rowHeight         : 25,
         rowResizeFeature  : false,
         loadMask          : 'Loading tree data...',

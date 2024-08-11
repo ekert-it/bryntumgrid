@@ -7,7 +7,6 @@ import { BryntumGrid } from '@bryntum/grid-vue-3';
 import ItalicName from '@/components/ItalicName.vue';
 import BoldName from '@/components/BoldName.vue';
 import ArrayRenderer from '@/components/ArrayRenderer.vue';
-import IconRenderer from '@/components/IconRenderer.vue';
 
 
 const app = createApp(App);
@@ -15,6 +14,5 @@ app.component('BryntumGrid', BryntumGrid);
 app.component('BoldName', BoldName);
 app.component('ItalicName', ItalicName);
 app.component('ArrayRenderer', ArrayRenderer);
-app.component('IconRenderer', IconRenderer);
 
 app.mount('#app')
