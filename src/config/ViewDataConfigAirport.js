@@ -25,7 +25,7 @@ const store = new AjaxStore({
     readUrl    : '/data/airport.json',
     autoLoad   : true,
     tree       : true,
-    //lazyLoad: true,
+    lazyLoad: true,
 });
 
 const useGridConfig = () => {
