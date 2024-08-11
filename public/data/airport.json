@@ -1,0 +1,217 @@
+[
+    {
+        "id"       : 1,
+        "name"     : "Kastrup Airport",
+        "expanded" : true,
+        "children" : [
+            {
+                "id"      : 2,
+                "name"    : "Terminal A",
+                "type"    : "terminal",
+                "lounges" : ["Aspire Lounge", "Other"],
+                "rowHeight" : 80,
+                "expanded"  : true,
+                "children"  : [
+                    {
+                        "id"       : 3,
+                        "name"     : "Gates 1 - 5",
+                        "expanded" : false,
+                        "children" : [
+                            {
+                                "id"       : 4,
+                                "name"     : "Gate 1",
+                                "capacity" : 100,
+                                "icon"     : 45,
+                                "airline"  : "SAS",
+                                "manager"  : "Linda"
+                            },
+                            {
+                                "id"       : 5,
+                                "name"     : "Gate 2",
+                                "capacity" : 45,
+                                "icon"     : 45,
+                                "domestic" : "yes",
+                                "airline"  : "Lufthansa",
+                                "manager"  : "Steve"
+                            },
+                            {
+                                "id"       : 6,
+                                "name"     : "Gate 3",
+                                "capacity" : 45,
+                                "icon"     : 65,
+                                "airline"  : "SAS",
+                                "manager"  : "Steve"
+                            },
+                            {
+                                "id"       : 7,
+                                "name"     : "Gate 4",
+                                "capacity" : 65,
+                                "icon"     : 65,
+                                "airline"  : "Norwegian",
+                                "manager"  : "Linda"
+                            },
+                            {
+                                "id"       : 8,
+                                "name"     : "Gate 5",
+                                "capacity" : 75,
+                                "icon"     : 75,
+                                "domestic" : "yes",
+                                "airline"  : "Air France",
+                                "manager"  : "Steve"
+                            }
+                        ]
+                    },
+                    {
+                        "id"       : 9,
+                        "name"     : "Gates 6 - 10",
+                        "expanded" : true,
+                        "children" : [
+                            {
+                                "id"       : 10,
+                                "name"     : "Gate 6",
+                                "capacity" : 77,
+                                "airline"  : "SAS",
+                                "manager"  : "Steve"
+                            },
+                            {
+                                "id"       : 11,
+                                "name"     : "Gate 7",
+                                "capacity" : 85,
+                                "icon"     : 45,
+                                "airline"  : "Norwegian",
+                                "manager"  : "Linda"
+                            },
+                            {
+                                "id"       : 12,
+                                "name"     : "Gate 8",
+                                "capacity" : 95,
+                                "domestic" : "yes",
+                                "airline"  : "Lufthansa",
+                                "manager"  : "Linda"
+                            },
+                            {
+                                "id"       : 13,
+                                "name"     : "Gate 9",
+                                "capacity" : 55,
+                                "domestic" : "yes",
+                                "airline"  : "Lufthansa",
+                                "manager"  : "Daniel"
+                            },
+                            {
+                                "id"       : 14,
+                                "name"     : "Gate 10",
+                                "capacity" : 15,
+                                "domestic" : "yes",
+                                "airline"  : "Air France",
+                                "manager"  : "Steve"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id"        : 15,
+                "name"      : "Terminal B - Domestic",
+                "type"      : "terminal",
+                "lounges"   : ["Star Alliance"],
+                "rowHeight" : 80,
+                "expanded"  : true,
+                "children"  : [
+                    {
+                        "id"       : 16,
+                        "name"     : "Gates 1 - 5",
+                        "children" : [
+                            {
+                                "id"       : 17,
+                                "name"     : "Gate 1",
+                                "capacity" : 15,
+                                "domestic" : "yes",
+                                "airline"  : "Lufthansa",
+                                "manager"  : "Daniel"
+                            },
+                            {
+                                "id"       : 18,
+                                "name"     : "Gate 2",
+                                "capacity" : 45,
+                                "domestic" : "yes",
+                                "airline"  : "Air China",
+                                "manager"  : "Daniel"
+                            },
+                            {
+                                "id"       : 19,
+                                "name"     : "Gate 3",
+                                "capacity" : 45,
+                                "domestic" : "yes",
+                                "airline"  : "SAS",
+                                "manager"  : "Steve"
+                            },
+                            {
+                                "id"       : 20,
+                                "name"     : "Gate 4",
+                                "capacity" : 65,
+                                "domestic" : "yes",
+                                "airline"  : "SAS",
+                                "manager"  : "Steve"
+                            },
+                            {
+                                "id"       : 21,
+                                "name"     : "Gate 5",
+                                "capacity" : 70,
+                                "domestic" : "yes",
+                                "airline"  : "Lufthansa",
+                                "manager"  : "Steve"
+                            }
+                        ]
+                    },
+                    {
+                        "id"       : 22,
+                        "name"     : "Gates 6 - 10",
+                        "expanded" : true,
+                        "children" : [
+                            {
+                                "id"       : 23,
+                                "name"     : "Gate 6",
+                                "capacity" : 80,
+                                "domestic" : "yes",
+                                "airline"  : "SAS",
+                                "manager"  : "Daniel"
+                            },
+                            {
+                                "id"       : 24,
+                                "name"     : "Gate 7",
+                                "capacity" : 120,
+                                "domestic" : "yes",
+                                "airline"  : "Norwegian",
+                                "manager"  : "Daniel"
+                            },
+                            {
+                                "id"       : 25,
+                                "name"     : "Gate 8",
+                                "capacity" : 125,
+                                "domestic" : "yes",
+                                "airline"  : "Lufthansa",
+                                "manager"  : "Linda"
+                            },
+                            {
+                                "id"       : 26,
+                                "name"     : "Gate 9",
+                                "capacity" : 100,
+                                "domestic" : "yes",
+                                "airline"  : "SAS",
+                                "manager"  : "Linda"
+                            },
+                            {
+                                "id"       : 27,
+                                "name"     : "Gate 10",
+                                "capacity" : 100,
+                                "domestic" : "yes",
+                                "airline"  : "Lufthansa",
+                                "manager"  : "Linda"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
