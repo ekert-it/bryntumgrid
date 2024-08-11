@@ -2,6 +2,7 @@ import { AjaxStore, GridRowModel, StringHelper } from '@bryntum/grid';
 
 class Gate extends GridRowModel {
     static fields = [
+        'name',
         { name : 'capacity', type : 'number' },
         'domestic',
         'airline',
@@ -24,7 +25,7 @@ const store = new AjaxStore({
     readUrl    : '/data/airport.json',
     autoLoad   : true,
     tree       : true,
-    //lazyLoad: { chunkSize: 150 },
+    //lazyLoad: true,
 });
 
 const useGridConfig = () => {
@@ -62,6 +63,7 @@ const useGridConfig = () => {
         },
         columns : [
             {
+                id          : 0,
                 text        : 'Name',
                 field       : 'name',
                 width       : 400,
@@ -92,9 +94,9 @@ const useGridConfig = () => {
                 // expandIconCls   : 'b-fa b-fa-plus-square',
                 // collapseIconCls : 'b-fa b-fa-minus-square'
             },
-            { text : 'Id', field : 'id', width : 40, editor : false },
-            { text : 'ParentIndex', field : 'parentIndex', width : 40 },
-            { text : 'Lounges', field : 'lounges', width : 300,
+            { id: 1, text : 'Id', field : 'id', width : 40, editor : false },
+            { id: 2, text : 'ParentIndex', field : 'parentIndex', width : 40 },
+            { id: 3, text : 'Lounges', field : 'lounges', width : 300,
                 vue : true,
                 renderer({ record: { lounges : arr } }) {
                     return {
@@ -107,7 +109,7 @@ const useGridConfig = () => {
                     };
                 }
             },
-            { text : 'Icon', field : 'icon', type: 'number', width : 10, editable: false, searchable: false,
+            { id: 4, text : 'Icon', field : 'icon', type: 'number', width : 10, editable: false, searchable: false,
                 align: 'center',
                 vue : true,
                 renderer({ record: { icon } }) {
@@ -117,10 +119,10 @@ const useGridConfig = () => {
                     };
                 }, readOnly: true, filterable: false,
             },
-            { type : 'aggregate', text : 'Capacity', field : 'capacity', width : 300 },
-            { text : 'Domestic', field : 'domestic', width : 300 },
-            { text : 'Airline', field : 'airline', width : 300 },
-            { text : 'Responsible<br/>Manager', field : 'manager', width : 100, htmlEncodeHeaderText : false }
+            { id: 5, type : 'aggregate', text : 'Capacity', field : 'capacity', width : 300 },
+            { id: 6, text : 'Domestic', field : 'domestic', width : 300 },
+            { id: 7, text : 'Airline', field : 'airline', width : 300 },
+            { id: 8, text : 'Responsible<br/>Manager', field : 'manager', width : 100, htmlEncodeHeaderText : false }
         ],
     };
 };
