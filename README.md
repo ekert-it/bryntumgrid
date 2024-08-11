@@ -3,6 +3,7 @@
 Bryntum Lazy Load Demo.<br>
 Based on the default Vue 3 with Vite template which is used when created through IntelliJ (Pro) -> File -> New -> Project -> Vue.js
 
+(Original template available in branch 'demotemplate')
 
 
 ## Project Setup
